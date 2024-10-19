@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Si LandLord</title>
+    <link rel="stylesheet" href="landlorddesayn.css">
+</head>
+<body>
+    <h1>Sup Landlord</h1>
+    <div class="container">
+        <form>
+            <h2>Add Another Boarding House</h2>
+            <label for="house-name">House Name:</label>
+            <input type="text" id="house-name" name="house-name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" required>
+
+            <label for="rent">Rent per Room:</label>
+            <input type="number" id="rent" name="rent" required>
+
+            <label for="house-image">Upload House Image:</label>
+            <input type="file" id="img-house" name="img-house">
+
+            <button type="submit">Finish</button>
+        </form>
+        <div class="info">
+            <div class="available-rooms">
+                <h3>Available Rooms</h3>
+                <div class="room-info">
+                    <p>Available Rooms: <span id="available-rooms">5</span></p>
+                </div>
+                <div class="room-info">
+                    <p>Rooms Occupied: <span id="occupied-rooms">3</span></p>
+                </div>
+                <div class="room-info">
+                    <p>Total: <span id="total-rooms">8</span></p>
+                </div>
+                <div class="payment-dues">
+                    <h3>Tenant Payment Dues</h3>
+                    <div class="tenant-info">
+                        <p>Tenant Name: <span id="tenant1-name">Niel Aspag</span></p>
+                        <p>Rent Due: <span id="tenant1-rent">$300</span></p>
+                        <p>Status: <span class="status pending" id="tenant1-status">Pending</span></p>
+                    </div>
+                    <div class="tenant-info">
+                        <p>Tenant Name: <span id="tenant2-name">Jane Sy</span></p>
+                        <p>Rent Due: <span id="tenant2-rent">$300</span></p>
+                        <p>Status: <span class="status paid" id="tenant2-status">Paid</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
